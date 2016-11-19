@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @accesorio.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @accesorio.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@accesorio.picture_url, :width => 600) if @accesorio.picture.present? %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @accesorio.cost %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @accesorio.availability %>
+</p>
+
+<%= link_to 'Edit', edit_accesorio_path(@accesorio) %> |
+<%= link_to 'Back', accesorios_path %>

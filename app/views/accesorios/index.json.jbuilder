@@ -1,0 +1,1 @@
+json.array! @accesorios, partial: 'accesorios/accesorio', as: :accesorio
